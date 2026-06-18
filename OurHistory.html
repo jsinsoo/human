@@ -4,13 +4,9 @@
 <meta charset="UTF-8">
 <title>우리 역사의 Black Swan 20장면</title>
 <style>
-body{font-family:Arial,"Malgun Gothic",sans-serif;line-height:1.75;margin:40px;background:#f7f7fb;color:#222}
-h1{color:#111}
-.card{background:white;border-radius:16px;padding:24px;margin:22px 0;box-shadow:0 4px 14px rgba(0,0,0,.08)}
-h2{color:#1f3a8a}
-.en{font-weight:bold;color:#111}
-.ko{color:#333}
-.tag{display:inline-block;background:#e0ecff;color:#1f3a8a;padding:4px 10px;border-radius:20px;font-size:13px}
+body{font-family:Arial,"Malgun Gothic",sans-serif;line-height:1.75;margin:35px;background:#f7f7fb;color:#222}
+h1{color:#111}.card{background:#fff;border-radius:16px;padding:24px;margin:22px 0;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+h2{color:#1f3a8a}.en{font-weight:bold}.ko{color:#333}.lesson{background:#eef6ff;padding:14px;border-left:5px solid #1f3a8a;border-radius:10px}
 </style>
 </head>
 <body>
@@ -18,165 +14,177 @@ h2{color:#1f3a8a}
 <h1>우리 역사의 Black Swan 20장면</h1>
 <p>Black Swan은 예상하기 어려웠지만, 일어난 뒤 역사의 방향을 크게 바꾼 사건을 뜻한다.</p>
 
-<div class="card">
-<h2>1. 고조선의 멸망</h2><span class="tag">고대 국가</span>
-<p class="en">The fall of Gojoseon was a Black Swan because an ancient Korean state suddenly disappeared under Han Chinese pressure.</p>
-<p class="ko">고조선의 멸망은 한나라의 압박 속에서 고대 한국 국가가 갑자기 사라졌다는 점에서 블랙 스완이었다.</p>
-<p class="en">After this event, new political powers and cultural networks emerged across the Korean Peninsula.</p>
-<p class="ko">이 사건 이후 한반도에는 새로운 정치 세력과 문화적 연결망이 형성되었다.</p>
-</div>
+<script>
+const data=[
+["고조선의 멸망",
+["The fall of Gojoseon changed the first major political order in Korean history.","고조선의 멸망은 한국사 최초의 주요 정치 질서를 바꾸었다."],
+["Foreign pressure exposed the limits of an ancient state.","외세의 압력은 고대 국가의 한계를 드러냈다."],
+["New powers appeared after the old center collapsed.","옛 중심이 무너진 뒤 새로운 세력들이 등장했다."],
+["The event reshaped politics and culture on the peninsula.","이 사건은 한반도의 정치와 문화를 재편했다."],
+["It became a turning point between early statehood and later kingdoms.","그것은 초기 국가 단계와 이후 왕국 시대 사이의 전환점이 되었다."],
+["Lesson: A state must adapt when the regional order changes.","교훈: 국가는 주변 질서가 바뀔 때 적응해야 한다."]],
 
-<div class="card">
-<h2>2. 삼국의 성장</h2><span class="tag">국가 형성</span>
-<p class="en">The rise of Goguryeo, Baekje, and Silla changed small tribal societies into powerful kingdoms.</p>
-<p class="ko">고구려, 백제, 신라의 성장은 작은 부족 사회를 강력한 왕국으로 바꾸었다.</p>
-<p class="en">This transformation created centuries of war, diplomacy, cultural exchange, and competition.</p>
-<p class="ko">이 변화는 수 세기 동안 전쟁, 외교, 문화 교류, 경쟁을 낳았다.</p>
-</div>
+["삼국의 성장",
+["Small tribal societies unexpectedly developed into powerful kingdoms.","작은 부족 사회들이 예상 밖으로 강력한 왕국으로 성장했다."],
+["Goguryeo, Baekje, and Silla competed for land and influence.","고구려, 백제, 신라는 영토와 영향력을 두고 경쟁했다."],
+["Their rivalry created war, diplomacy, and cultural exchange.","그들의 경쟁은 전쟁, 외교, 문화 교류를 만들었다."],
+["The peninsula became a dynamic political space.","한반도는 역동적인 정치 공간이 되었다."],
+["This transformation shaped the foundation of Korean civilization.","이 변화는 한국 문명의 기초를 형성했다."],
+["Lesson: Competition can create conflict, but it can also drive growth.","교훈: 경쟁은 갈등을 만들지만 성장도 이끌 수 있다."]],
 
-<div class="card">
-<h2>3. 고구려의 수·당 전쟁 승리</h2><span class="tag">전쟁</span>
-<p class="en">Goguryeo’s resistance against Sui and Tang was unexpected because it survived attacks from huge empires.</p>
-<p class="ko">고구려가 수·당의 공격을 막아낸 것은 거대한 제국의 침략을 견뎌냈다는 점에서 예상을 뛰어넘은 사건이었다.</p>
-<p class="en">Its survival protected the northern balance of power in East Asia.</p>
-<p class="ko">고구려의 생존은 동아시아 북방 세력 균형을 지켜냈다.</p>
-</div>
+["고구려의 수·당 전쟁 승리",
+["Goguryeo survived attacks from some of the largest empires in Asia.","고구려는 아시아의 거대한 제국들의 공격을 견뎌냈다."],
+["Its resistance surprised powerful neighboring states.","그 저항은 강대국들을 놀라게 했다."],
+["Military strategy and geography helped protect the kingdom.","군사 전략과 지형은 나라를 지키는 데 도움이 되었다."],
+["The victories preserved the balance of power in Northeast Asia.","그 승리는 동북아시아의 세력 균형을 지켰다."],
+["Goguryeo became a symbol of strong defense and independence.","고구려는 강한 방어와 독립의 상징이 되었다."],
+["Lesson: Wise strategy can overcome a stronger enemy.","교훈: 지혜로운 전략은 더 강한 적도 이겨낼 수 있다."]],
 
-<div class="card">
-<h2>4. 신라의 삼국 통일</h2><span class="tag">통일</span>
-<p class="en">Silla’s unification was a Black Swan because the smallest kingdom became the final winner.</p>
-<p class="ko">신라의 삼국 통일은 가장 작은 나라가 최종 승자가 되었다는 점에서 블랙 스완이었다.</p>
-<p class="en">It reorganized politics, culture, Buddhism, and aristocratic society on the Korean Peninsula.</p>
-<p class="ko">이 사건은 한반도의 정치, 문화, 불교, 귀족 사회를 재편하였다.</p>
-</div>
+["신라의 삼국 통일",
+["Silla was once the smallest of the Three Kingdoms.","신라는 한때 삼국 중 가장 작은 나라였다."],
+["Yet it became the final winner of the long struggle.","그러나 긴 경쟁의 최종 승자가 되었다."],
+["Alliance, diplomacy, and timing changed the result of history.","동맹, 외교, 시기가 역사의 결과를 바꾸었다."],
+["Unification reorganized politics, Buddhism, and aristocratic society.","통일은 정치, 불교, 귀족 사회를 재편했다."],
+["The event created a new historical order on the peninsula.","이 사건은 한반도에 새로운 역사 질서를 만들었다."],
+["Lesson: Size alone does not decide the future.","교훈: 크기만으로 미래가 결정되지는 않는다."]],
 
-<div class="card">
-<h2>5. 발해의 건국</h2><span class="tag">계승</span>
-<p class="en">The founding of Balhae surprised history because Goguryeo’s legacy reappeared after its fall.</p>
-<p class="ko">발해의 건국은 고구려 멸망 이후 그 유산이 다시 등장했다는 점에서 역사적 충격이었다.</p>
-<p class="en">Balhae connected northern culture, international trade, and Korean historical identity.</p>
-<p class="ko">발해는 북방 문화, 국제 교역, 한국사의 정체성을 연결하였다.</p>
-</div>
+["발해의 건국",
+["Balhae appeared after the fall of Goguryeo.","발해는 고구려 멸망 이후 등장했다."],
+["It revived northern power in Korean history.","그것은 한국사에서 북방 세력을 되살렸다."],
+["Balhae connected Korean, Manchurian, and East Asian cultures.","발해는 한국, 만주, 동아시아 문화를 연결했다."],
+["Its rise surprised those who thought Goguryeo’s legacy had ended.","그 성장은 고구려의 유산이 끝났다고 생각한 이들을 놀라게 했다."],
+["Balhae became an important part of Korea’s historical identity.","발해는 한국 역사 정체성의 중요한 부분이 되었다."],
+["Lesson: A defeated legacy can return in a new form.","교훈: 패배한 유산도 새로운 형태로 돌아올 수 있다."]],
 
-<div class="card">
-<h2>6. 후삼국 시대의 등장</h2><span class="tag">분열</span>
-<p class="en">The Later Three Kingdoms period was unexpected because Unified Silla rapidly lost control.</p>
-<p class="ko">후삼국 시대는 통일신라가 급격히 통제력을 잃었다는 점에서 예상 밖의 사건이었다.</p>
-<p class="en">Local powers rose, and a new political order became possible.</p>
-<p class="ko">지방 세력이 성장했고 새로운 정치 질서가 가능해졌다.</p>
-</div>
+["후삼국 시대의 등장",
+["Unified Silla rapidly lost its control over local powers.","통일신라는 지방 세력에 대한 통제력을 빠르게 잃었다."],
+["New leaders rose from regional society.","새로운 지도자들이 지방 사회에서 등장했다."],
+["The peninsula was divided again into competing states.","한반도는 다시 경쟁하는 국가들로 나뉘었다."],
+["The old order collapsed faster than many expected.","낡은 질서는 많은 이들의 예상보다 빠르게 무너졌다."],
+["This chaos opened the way for a new dynasty.","이 혼란은 새로운 왕조의 길을 열었다."],
+["Lesson: When central power ignores local change, collapse can follow.","교훈: 중앙 권력이 지방의 변화를 무시하면 붕괴가 뒤따를 수 있다."]],
 
-<div class="card">
-<h2>7. 고려의 건국</h2><span class="tag">왕조 교체</span>
-<p class="en">The founding of Goryeo was a Black Swan because a new dynasty unified a divided land.</p>
-<p class="ko">고려의 건국은 분열된 땅을 새로운 왕조가 통합했다는 점에서 블랙 스완이었다.</p>
-<p class="en">It created a new system of Buddhism, diplomacy, aristocracy, and national identity.</p>
-<p class="ko">고려는 불교, 외교, 귀족 정치, 국가 정체성의 새 체계를 만들었다.</p>
-</div>
+["고려의 건국",
+["Goryeo unified the Later Three Kingdoms.","고려는 후삼국을 통일했다."],
+["A new dynasty replaced the weakened Silla order.","새로운 왕조가 약해진 신라 질서를 대체했다."],
+["Goryeo promoted Buddhism, diplomacy, and aristocratic culture.","고려는 불교, 외교, 귀족 문화를 발전시켰다."],
+["The name Goryeo later influenced the name Korea.","고려라는 이름은 훗날 Korea라는 명칭에도 영향을 주었다."],
+["Its foundation marked a major political reset.","그 건국은 중요한 정치적 재출발을 의미했다."],
+["Lesson: New beginnings often emerge from periods of division.","교훈: 새로운 시작은 종종 분열의 시기에서 나온다."]],
 
-<div class="card">
-<h2>8. 몽골의 침입</h2><span class="tag">외세 침략</span>
-<p class="en">The Mongol invasions shocked Goryeo because a continental empire reached the Korean Peninsula.</p>
-<p class="ko">몽골의 침입은 대륙 제국의 힘이 한반도까지 도달했다는 점에서 고려에 큰 충격을 주었다.</p>
-<p class="en">The invasions changed military policy, royal authority, diplomacy, and social suffering.</p>
-<p class="ko">이 침입은 군사 정책, 왕권, 외교, 백성의 고통을 크게 바꾸었다.</p>
-</div>
+["몽골의 침입",
+["The Mongol Empire reached the Korean Peninsula with overwhelming force.","몽골 제국은 압도적인 힘으로 한반도에 도달했다."],
+["Goryeo faced a continental power unlike any earlier enemy.","고려는 이전과 다른 대륙 세력과 맞섰다."],
+["The invasions caused great suffering and political pressure.","침입은 큰 고통과 정치적 압박을 가져왔다."],
+["Goryeo survived but had to accept deep foreign influence.","고려는 살아남았지만 깊은 외세의 영향을 받아들여야 했다."],
+["The event changed diplomacy, military policy, and royal authority.","이 사건은 외교, 군사 정책, 왕권을 바꾸었다."],
+["Lesson: Survival sometimes requires endurance as much as victory.","교훈: 생존에는 승리만큼이나 인내가 필요하다."]],
 
-<div class="card">
-<h2>9. 조선의 건국</h2><span class="tag">새 왕조</span>
-<p class="en">The founding of Joseon was a Black Swan because the old Buddhist aristocratic order collapsed.</p>
-<p class="ko">조선의 건국은 불교 중심의 귀족 질서가 무너졌다는 점에서 블랙 스완이었다.</p>
-<p class="en">Confucianism became the foundation of politics, education, family ethics, and law.</p>
-<p class="ko">유교는 정치, 교육, 가족 윤리, 법의 기초가 되었다.</p>
-</div>
+["조선의 건국",
+["Joseon replaced Goryeo with a new Confucian order.","조선은 고려를 대신해 새로운 유교 질서를 세웠다."],
+["The dynasty changed politics, education, law, and social ethics.","이 왕조는 정치, 교육, 법, 사회 윤리를 바꾸었다."],
+["Buddhism lost political influence while Confucianism became central.","불교는 정치적 영향력을 잃고 유교가 중심이 되었다."],
+["The founding of Joseon was both a revolution and a reorganization.","조선의 건국은 혁명이자 재편이었다."],
+["It shaped Korean society for more than five centuries.","그것은 500년 넘게 한국 사회를 형성했다."],
+["Lesson: Ideas can become the foundation of an entire civilization.","교훈: 사상은 문명 전체의 기초가 될 수 있다."]],
 
-<div class="card">
-<h2>10. 한글 창제</h2><span class="tag">문자 혁명</span>
-<p class="en">The creation of Hangeul was a Black Swan because a new writing system opened knowledge to ordinary people.</p>
-<p class="ko">한글 창제는 새로운 문자가 지식을 백성에게 열어 주었다는 점에서 블랙 스완이었다.</p>
-<p class="en">It transformed literacy, communication, education, culture, and Korean identity.</p>
-<p class="ko">한글은 문해력, 의사소통, 교육, 문화, 한국인의 정체성을 변화시켰다.</p>
-</div>
+["한글 창제",
+["The creation of Hangeul changed the history of Korean communication.","한글 창제는 한국어 소통의 역사를 바꾸었다."],
+["A new writing system opened knowledge to ordinary people.","새로운 문자 체계는 지식을 백성에게 열어 주었다."],
+["It challenged the monopoly of classical Chinese literacy.","그것은 한문 지식의 독점을 흔들었다."],
+["Hangeul strengthened cultural identity and education.","한글은 문화 정체성과 교육을 강화했다."],
+["Its influence grew far beyond the age of King Sejong.","그 영향은 세종 시대를 훨씬 넘어 확장되었다."],
+["Lesson: True innovation empowers ordinary people.","교훈: 진정한 혁신은 평범한 사람들에게 힘을 준다."]],
 
-<div class="card">
-<h2>11. 임진왜란</h2><span class="tag">전쟁</span>
-<p class="en">The Japanese invasions of Korea were unexpected because a foreign army suddenly shook the entire kingdom.</p>
-<p class="ko">임진왜란은 외국 군대가 갑자기 왕국 전체를 흔들었다는 점에서 예상 밖의 사건이었다.</p>
-<p class="en">The war changed military technology, diplomacy, social memory, and East Asian relations.</p>
-<p class="ko">이 전쟁은 군사 기술, 외교, 사회적 기억, 동아시아 관계를 바꾸었다.</p>
-</div>
+["임진왜란",
+["The Japanese invasions suddenly threw Joseon into a national crisis.","임진왜란은 조선을 갑작스러운 국가 위기로 몰아넣었다."],
+["The war devastated cities, villages, and families.","전쟁은 도시, 마을, 가족을 파괴했다."],
+["Admiral Yi Sun-sin’s naval victories became decisive.","이순신 장군의 해전 승리는 결정적이었다."],
+["The conflict changed military technology and East Asian diplomacy.","이 전쟁은 군사 기술과 동아시아 외교를 바꾸었다."],
+["The memory of war remained deeply in Korean history.","전쟁의 기억은 한국사에 깊이 남았다."],
+["Lesson: Prepared leadership can protect a nation in crisis.","교훈: 준비된 리더십은 위기 속에서 나라를 지킬 수 있다."]],
 
-<div class="card">
-<h2>12. 병자호란</h2><span class="tag">외교 위기</span>
-<p class="en">The Manchu invasion was a Black Swan because Joseon’s worldview collapsed under a new regional power.</p>
-<p class="ko">병자호란은 조선의 세계관이 새로운 지역 강국 앞에서 무너졌다는 점에서 블랙 스완이었다.</p>
-<p class="en">It forced Joseon to reconsider diplomacy, military weakness, and the limits of ideology.</p>
-<p class="ko">이 사건은 조선이 외교, 군사적 약점, 이념의 한계를 다시 생각하게 만들었다.</p>
-</div>
+["병자호란",
+["Joseon faced a new power rising from Manchuria.","조선은 만주에서 떠오른 새로운 세력과 마주했다."],
+["The invasion shattered Joseon’s worldview and pride.","침입은 조선의 세계관과 자존심을 흔들었다."],
+["Military weakness became painfully visible.","군사적 약점이 고통스럽게 드러났다."],
+["The king’s surrender marked a deep national humiliation.","왕의 항복은 깊은 국가적 굴욕으로 남았다."],
+["The event forced Joseon to rethink diplomacy and power.","이 사건은 조선이 외교와 힘을 다시 생각하게 했다."],
+["Lesson: Ideology without realistic power can be dangerous.","교훈: 현실적 힘이 없는 이념은 위험할 수 있다."]],
 
-<div class="card">
-<h2>13. 실학의 등장</h2><span class="tag">사상 변화</span>
-<p class="en">The rise of Silhak was unexpected because practical learning challenged rigid Confucian thinking.</p>
-<p class="ko">실학의 등장은 실용적 학문이 경직된 성리학적 사고에 도전했다는 점에서 예상 밖의 변화였다.</p>
-<p class="en">It encouraged reform in agriculture, commerce, science, geography, and social policy.</p>
-<p class="ko">실학은 농업, 상업, 과학, 지리, 사회 정책의 개혁을 촉진하였다.</p>
-</div>
+["실학의 등장",
+["Silhak challenged rigid thinking in late Joseon.","실학은 조선 후기의 경직된 사고에 도전했다."],
+["Scholars focused on practical reform and real life.","학자들은 실용적 개혁과 현실 생활에 주목했다."],
+["They studied agriculture, commerce, science, and geography.","그들은 농업, 상업, 과학, 지리를 연구했다."],
+["Silhak revealed the need to repair society from within.","실학은 사회를 내부에서 고쳐야 할 필요성을 보여 주었다."],
+["Its ideas later influenced modern reform movements.","그 사상은 훗날 근대 개혁 운동에 영향을 주었다."],
+["Lesson: Knowledge must solve real problems, not only preserve tradition.","교훈: 지식은 전통 보존에 그치지 않고 현실 문제를 해결해야 한다."]],
 
-<div class="card">
-<h2>14. 동학농민운동</h2><span class="tag">민중 봉기</span>
-<p class="en">The Donghak Peasant Movement was a Black Swan because ordinary farmers became a force that shook the state.</p>
-<p class="ko">동학농민운동은 평범한 농민들이 국가를 흔드는 세력이 되었다는 점에서 블랙 스완이었다.</p>
-<p class="en">It exposed corruption, inequality, foreign pressure, and the weakness of late Joseon.</p>
-<p class="ko">이 운동은 부패, 불평등, 외세 압력, 조선 후기의 약점을 드러냈다.</p>
-</div>
+["동학농민운동",
+["Farmers rose against corruption, inequality, and foreign pressure.","농민들은 부패, 불평등, 외세 압력에 맞서 일어났다."],
+["Their movement shook the late Joseon state.","그들의 운동은 조선 후기 국가를 흔들었다."],
+["Ordinary people became central actors in history.","평범한 사람들이 역사의 중심 주체가 되었다."],
+["The movement demanded dignity and justice.","이 운동은 존엄과 정의를 요구했다."],
+["It exposed the weakness of the old ruling system.","그것은 낡은 지배 체제의 약점을 드러냈다."],
+["Lesson: A society that ignores the people eventually faces resistance.","교훈: 민중을 무시하는 사회는 결국 저항에 직면한다."]],
 
-<div class="card">
-<h2>15. 대한제국 선포</h2><span class="tag">근대 국가</span>
-<p class="en">The proclamation of the Korean Empire was a dramatic attempt to survive in the age of imperialism.</p>
-<p class="ko">대한제국 선포는 제국주의 시대에 살아남기 위한 극적인 시도였다.</p>
-<p class="en">It showed Korea’s desire for independence, modernization, and sovereign reform.</p>
-<p class="ko">그것은 독립, 근대화, 주권적 개혁을 향한 한국의 의지를 보여 주었다.</p>
-</div>
+["대한제국 선포",
+["Korea proclaimed itself an empire in a dangerous imperial age.","한국은 위험한 제국주의 시대에 스스로 제국임을 선포했다."],
+["The decision expressed a desire for sovereignty and modernization.","그 결정은 주권과 근대화를 향한 의지를 표현했다."],
+["Reform efforts tried to strengthen the state.","개혁 노력은 국가를 강화하려 했다."],
+["However, foreign pressure remained overwhelming.","그러나 외세의 압력은 여전히 압도적이었다."],
+["The proclamation was bold but historically fragile.","그 선포는 대담했지만 역사적으로 불안정했다."],
+["Lesson: Symbols of sovereignty must be supported by real capacity.","교훈: 주권의 상징은 실제 역량으로 뒷받침되어야 한다."]],
 
-<div class="card">
-<h2>16. 일제강점기</h2><span class="tag">식민 지배</span>
-<p class="en">Japanese colonial rule was a Black Swan because Korea lost sovereignty and faced forced transformation.</p>
-<p class="ko">일제강점기는 한국이 주권을 잃고 강제적 변화를 겪었다는 점에서 블랙 스완이었다.</p>
-<p class="en">It changed language policy, education, economy, land ownership, resistance movements, and national memory.</p>
-<p class="ko">그 시기는 언어 정책, 교육, 경제, 토지 소유, 저항 운동, 민족 기억을 바꾸었다.</p>
-</div>
+["일제강점기",
+["Korea lost sovereignty and became a Japanese colony.","한국은 주권을 잃고 일본의 식민지가 되었다."],
+["Colonial rule controlled land, labor, language, and education.","식민 지배는 토지, 노동, 언어, 교육을 통제했다."],
+["Many Koreans suffered exploitation and cultural suppression.","많은 한국인이 수탈과 문화적 억압을 겪었다."],
+["At the same time, resistance movements continued inside and outside Korea.","동시에 국내외에서 저항 운동이 계속되었다."],
+["National identity was strengthened through suffering and struggle.","민족 정체성은 고통과 투쟁 속에서 강화되었다."],
+["Lesson: Freedom is precious because its loss changes every part of life.","교훈: 자유는 그것을 잃으면 삶의 모든 부분이 바뀌기 때문에 소중하다."]],
 
-<div class="card">
-<h2>17. 3·1운동</h2><span class="tag">독립운동</span>
-<p class="en">The March First Movement was unexpected because peaceful citizens turned into a nationwide independence movement.</p>
-<p class="ko">3·1운동은 평화로운 시민들이 전국적 독립운동의 주체가 되었다는 점에서 예상 밖의 사건이었다.</p>
-<p class="en">It strengthened national identity and inspired the Korean Provisional Government.</p>
-<p class="ko">이 운동은 민족 정체성을 강화하고 대한민국 임시정부 수립에 영향을 주었다.</p>
-</div>
+["3·1운동",
+["Koreans declared their desire for independence to the world.","한국인들은 독립의 열망을 세계에 선언했다."],
+["The movement spread across cities and villages.","운동은 도시와 마을 곳곳으로 퍼졌다."],
+["It was largely peaceful but faced violent suppression.","대체로 평화적이었지만 폭력적 탄압을 받았다."],
+["The event inspired the Provisional Government of Korea.","이 사건은 대한민국 임시정부 수립에 영향을 주었다."],
+["It became a moral foundation of Korean independence.","그것은 한국 독립의 도덕적 기반이 되었다."],
+["Lesson: A shared voice can become stronger than weapons.","교훈: 함께 외치는 목소리는 무기보다 강해질 수 있다."]],
 
-<div class="card">
-<h2>18. 광복과 분단</h2><span class="tag">해방과 분단</span>
-<p class="en">Liberation in 1945 was a Black Swan because freedom arrived together with division.</p>
-<p class="ko">1945년 광복은 자유가 찾아왔지만 동시에 분단이 시작되었다는 점에서 블랙 스완이었다.</p>
-<p class="en">The end of colonial rule led to new hope, but also ideological conflict and national separation.</p>
-<p class="ko">식민 지배의 끝은 새로운 희망을 낳았지만, 이념 갈등과 민족 분단도 가져왔다.</p>
-</div>
+["광복과 분단",
+["Liberation in 1945 ended colonial rule.","1945년 광복은 식민 지배를 끝냈다."],
+["But freedom arrived together with division.","그러나 자유는 분단과 함께 찾아왔다."],
+["The Korean Peninsula became caught in global ideological conflict.","한반도는 세계적 이념 갈등 속에 놓였다."],
+["Hope and tragedy appeared at the same time.","희망과 비극이 동시에 나타났다."],
+["This contradiction shaped modern Korean history.","이 모순은 한국 현대사를 형성했다."],
+["Lesson: Liberation requires wise choices after freedom is gained.","교훈: 해방 이후에는 자유를 지킬 지혜로운 선택이 필요하다."]],
 
-<div class="card">
-<h2>19. 한국전쟁</h2><span class="tag">전쟁과 분단</span>
-<p class="en">The Korean War was a Black Swan because a divided peninsula became the center of a global Cold War conflict.</p>
-<p class="ko">한국전쟁은 분단된 한반도가 세계 냉전 갈등의 중심이 되었다는 점에서 블랙 스완이었다.</p>
-<p class="en">It caused massive destruction, permanent division, military alliances, and deep historical trauma.</p>
-<p class="ko">이 전쟁은 거대한 파괴, 영구적 분단, 군사 동맹, 깊은 역사적 상처를 남겼다.</p>
-</div>
+["한국전쟁",
+["The Korean War turned division into full-scale war.","한국전쟁은 분단을 전면전으로 바꾸었다."],
+["The peninsula became a battlefield of the Cold War.","한반도는 냉전의 전장이 되었다."],
+["Millions suffered death, separation, and displacement.","수많은 사람이 죽음, 이산, 피난의 고통을 겪었다."],
+["The war destroyed much of the country’s infrastructure.","전쟁은 국가 기반 시설의 많은 부분을 파괴했다."],
+["Its legacy still shapes Korean security and identity.","그 유산은 여전히 한국의 안보와 정체성을 형성한다."],
+["Lesson: Peace must be protected before war begins.","교훈: 평화는 전쟁이 시작되기 전에 지켜야 한다."]],
 
+["한강의 기적과 민주화",
+["South Korea rose from war ruins to economic success.","대한민국은 전쟁의 폐허에서 경제 성장으로 일어섰다."],
+["Rapid industrialization surprised much of the world.","빠른 산업화는 세계를 놀라게 했다."],
+["Citizens also fought for democracy and human rights.","시민들은 민주주의와 인권을 위해 싸웠다."],
+["Economic growth and democratization together transformed the nation.","경제 성장과 민주화는 함께 나라를 변화시켰다."],
+["Korea became a global example of resilience and change.","한국은 회복력과 변화의 세계적 사례가 되었다."],
+["Lesson: A strong nation needs both prosperity and democracy.","교훈: 강한 나라는 번영과 민주주의를 함께 필요로 한다."]]
+];
+
+document.write(data.map((x,i)=>`
 <div class="card">
-<h2>20. 한강의 기적과 민주화</h2><span class="tag">현대 전환</span>
-<p class="en">Korea’s economic growth and democratization were Black Swan-like because a war-torn country became a global democracy and industrial power.</p>
-<p class="ko">한국의 경제 성장과 민주화는 전쟁으로 폐허가 된 나라가 세계적 민주주의 국가이자 산업 강국이 되었다는 점에서 블랙 스완적 사건이었다.</p>
-<p class="en">This transformation changed education, technology, culture, citizenship, and Korea’s place in the world.</p>
-<p class="ko">이 변화는 교육, 기술, 문화, 시민의식, 세계 속 한국의 위치를 바꾸었다.</p>
+<h2>${i+1}. ${x[0]}</h2>
+${x.slice(1,6).map(s=>`<p class="en">${s[0]}</p><p class="ko">${s[1]}</p>`).join("")}
+<div class="lesson"><p class="en">${x[6][0]}</p><p class="ko">${x[6][1]}</p></div>
 </div>
+`).join(""));
+</script>
 
 </body>
 </html>
