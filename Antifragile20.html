@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>세계사적인 Antifragile 20장면</title>
+<style>
+body{font-family:Arial,"Malgun Gothic",sans-serif;line-height:1.75;margin:35px;background:#f7f7fb;color:#222}
+h1{color:#111}.card{background:#fff;border-radius:16px;padding:24px;margin:22px 0;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+h2{color:#1f3a8a}.en{font-weight:bold}.ko{color:#333}.lesson{background:#eef6ff;padding:14px;border-left:5px solid #1f3a8a;border-radius:10px}
+</style>
+</head>
+<body>
+
+<h1>세계사적인 Antifragile 20장면</h1>
+<p>Antifragile은 충격, 위기, 혼란을 겪으면서 오히려 더 강해지는 성질을 뜻한다.</p>
+
+<script>
+const data=[
+["아테네 민주정의 성장",
+["Athens became stronger through conflict, debate, and political experimentation.","아테네는 갈등, 토론, 정치 실험을 통해 더 강해졌다."],
+["Its democracy did not appear in a peaceful vacuum.","그 민주정은 평화로운 공백 속에서 등장하지 않았다."],
+["Social tension pushed citizens to redesign power.","사회적 긴장은 시민들이 권력을 새롭게 설계하도록 만들었다."],
+["Public debate became a tool for collective learning.","공적 토론은 집단 학습의 도구가 되었다."],
+["Athens showed that political stress can create civic innovation.","아테네는 정치적 압박이 시민적 혁신을 만들 수 있음을 보여 주었다."],
+["Lesson: A society grows stronger when conflict becomes discussion, not destruction.","교훈: 갈등이 파괴가 아니라 토론이 될 때 사회는 더 강해진다."]],
+
+["로마 공화정의 위기와 제도 발전",
+["Rome repeatedly faced wars, class conflict, and political crises.","로마는 전쟁, 계급 갈등, 정치 위기를 반복해서 겪었다."],
+["Each crisis forced Rome to adjust its institutions.","각 위기는 로마가 제도를 조정하도록 만들었다."],
+["The Republic expanded citizenship, law, and military organization.","공화정은 시민권, 법, 군사 조직을 확장했다."],
+["Its strength came from adaptation, not perfect stability.","그 힘은 완벽한 안정이 아니라 적응에서 나왔다."],
+["Rome became powerful because it learned from pressure.","로마는 압박 속에서 배웠기 때문에 강해졌다."],
+["Lesson: Institutions survive when they can change before they break.","교훈: 제도는 부서지기 전에 변할 수 있을 때 살아남는다."]],
+
+["흑사병 이후 유럽 사회 변화",
+["The Black Death destroyed millions of lives across Europe.","흑사병은 유럽 전역에서 수많은 생명을 앗아갔다."],
+["Yet the disaster weakened old feudal structures.","그러나 그 재난은 낡은 봉건 구조를 약화시켰다."],
+["Labor became more valuable after the population collapse.","인구 감소 이후 노동의 가치는 더 커졌다."],
+["Cities, wages, and social mobility began to change.","도시, 임금, 사회 이동성이 변화하기 시작했다."],
+["Europe slowly rebuilt itself in a new direction.","유럽은 서서히 새로운 방향으로 자신을 재건했다."],
+["Lesson: Even terrible loss can force society to correct hidden weaknesses.","교훈: 끔찍한 상실도 사회의 숨은 약점을 고치게 만들 수 있다."]],
+
+["르네상스",
+["The Renaissance emerged after centuries of crisis and transformation.","르네상스는 수 세기의 위기와 변화 이후 등장했다."],
+["Europe rediscovered ancient knowledge and created new art.","유럽은 고대 지식을 재발견하고 새로운 예술을 창조했다."],
+["Competition among cities encouraged creativity.","도시 간 경쟁은 창의성을 촉진했다."],
+["War, trade, and patronage pushed ideas to spread.","전쟁, 무역, 후원은 사상의 확산을 밀어붙였다."],
+["Cultural rebirth came from tension, not comfort.","문화적 부흥은 안락함이 아니라 긴장에서 나왔다."],
+["Lesson: Creativity often grows when old limits are broken.","교훈: 창의성은 낡은 한계가 깨질 때 자주 성장한다."]],
+
+["종교개혁",
+["The Reformation began as a challenge to religious authority.","종교개혁은 종교 권위에 대한 도전으로 시작되었다."],
+["Conflict divided Europe but also transformed faith and politics.","갈등은 유럽을 분열시켰지만 신앙과 정치를 변화시켰다."],
+["Printing helped new ideas spread rapidly.","인쇄술은 새로운 사상이 빠르게 퍼지도록 도왔다."],
+["Ordinary believers gained new access to religious texts.","평범한 신자들은 종교 문헌에 새롭게 접근하게 되었다."],
+["A crisis of authority produced new forms of belief and governance.","권위의 위기는 새로운 신앙과 통치 형태를 만들었다."],
+["Lesson: Questioning authority can be dangerous, but it can also renew civilization.","교훈: 권위에 질문하는 일은 위험하지만 문명을 새롭게 할 수도 있다."]],
+
+["과학혁명",
+["The Scientific Revolution challenged traditional explanations of nature.","과학혁명은 자연에 대한 전통적 설명에 도전했다."],
+["Old certainty weakened under observation and experiment.","낡은 확신은 관찰과 실험 앞에서 약해졌다."],
+["Scientists learned by doubting accepted answers.","과학자들은 받아들여진 답을 의심하며 배웠다."],
+["Mistakes became part of discovery.","실수는 발견의 일부가 되었다."],
+["Knowledge became stronger because it could be tested.","지식은 검증될 수 있었기 때문에 더 강해졌다."],
+["Lesson: Truth becomes stronger when it survives criticism.","교훈: 진리는 비판을 견뎌낼 때 더 강해진다."]],
+
+["명예혁명",
+["England faced conflict between monarchy and Parliament.","영국은 왕권과 의회 사이의 갈등을 겪었다."],
+["The crisis limited royal power.","그 위기는 왕권을 제한했다."],
+["Parliamentary government became stronger.","의회 중심 정치가 더 강해졌다."],
+["Political uncertainty produced a more stable constitutional order.","정치적 불확실성은 더 안정적인 헌정 질서를 만들었다."],
+["The state became less dependent on one ruler.","국가는 한 통치자에게 덜 의존하게 되었다."],
+["Lesson: Power is safer when it is limited and shared.","교훈: 권력은 제한되고 나뉠 때 더 안전하다."]],
+
+["미국 독립혁명",
+["The American colonies turned imperial pressure into independence.","미국 식민지들은 제국의 압박을 독립으로 바꾸었다."],
+["Tax conflict became a movement for self-government.","세금 갈등은 자치 운동으로 발전했다."],
+["War created a new political identity.","전쟁은 새로운 정치적 정체성을 만들었다."],
+["The Constitution tried to learn from the weakness of the old system.","헌법은 낡은 체제의 약점에서 배우려 했다."],
+["A fragile rebellion became a durable republic.","취약한 반란은 지속 가능한 공화국이 되었다."],
+["Lesson: Oppression can create unity when people share a clear purpose.","교훈: 억압은 사람들이 분명한 목적을 공유할 때 단결을 만들 수 있다."]],
+
+["프랑스 혁명",
+["The French Revolution exploded from inequality and political failure.","프랑스 혁명은 불평등과 정치 실패에서 폭발했다."],
+["The old monarchy collapsed under social pressure.","낡은 왕정은 사회적 압박 속에서 무너졌다."],
+["The revolution produced violence and instability.","혁명은 폭력과 불안정을 낳았다."],
+["Yet it spread ideas of citizenship, rights, and equality.","그러나 시민권, 권리, 평등의 사상을 확산시켰다."],
+["Europe could no longer ignore the power of the people.","유럽은 더 이상 민중의 힘을 무시할 수 없었다."],
+["Lesson: When reform is delayed too long, change may arrive as explosion.","교훈: 개혁이 너무 오래 미뤄지면 변화는 폭발처럼 찾아올 수 있다."]],
+
+["산업혁명",
+["The Industrial Revolution began with disruption and uncertainty.","산업혁명은 혼란과 불확실성 속에서 시작되었다."],
+["Machines changed work, cities, and family life.","기계는 노동, 도시, 가족 생활을 바꾸었다."],
+["Many people suffered under harsh factory conditions.","많은 사람은 혹독한 공장 환경에서 고통받았다."],
+["Over time, production, transportation, and technology advanced rapidly.","시간이 지나며 생산, 교통, 기술이 빠르게 발전했다."],
+["Industrial society grew stronger by reorganizing itself around new tools.","산업 사회는 새로운 도구를 중심으로 재편되며 강해졌다."],
+["Lesson: Technology must be guided by human values.","교훈: 기술은 인간적 가치에 의해 이끌려야 한다."]],
+
+["노예제 폐지 운동",
+["The abolition movement grew against a deeply entrenched system.","노예제 폐지 운동은 깊이 뿌리내린 제도에 맞서 성장했다."],
+["Moral pressure challenged economic interest.","도덕적 압력은 경제적 이익에 도전했다."],
+["Resistance by enslaved people exposed the cruelty of slavery.","노예들의 저항은 노예제의 잔혹성을 드러냈다."],
+["Societies were forced to redefine freedom and humanity.","사회는 자유와 인간성을 다시 정의해야 했다."],
+["The struggle made the idea of human rights stronger.","그 투쟁은 인권의 개념을 더 강하게 만들었다."],
+["Lesson: Justice often grows through resistance against normalized evil.","교훈: 정의는 정상처럼 여겨진 악에 맞선 저항 속에서 자란다."]],
+
+["일본 메이지 유신",
+["Japan faced the shock of Western imperial pressure.","일본은 서구 제국주의 압력이라는 충격을 맞았다."],
+["Instead of collapsing, it reorganized its state rapidly.","일본은 붕괴하는 대신 국가를 빠르게 재편했다."],
+["Old feudal structures were replaced by modern institutions.","낡은 봉건 구조는 근대 제도로 대체되었다."],
+["Education, industry, and military power expanded.","교육, 산업, 군사력이 확대되었다."],
+["External threat became the engine of internal reform.","외부 위협은 내부 개혁의 동력이 되었다."],
+["Lesson: A society can survive shock when it learns faster than its rivals.","교훈: 사회는 경쟁자보다 빠르게 배울 때 충격을 견딜 수 있다."]],
+
+["제1차 세계대전 이후 국제질서 변화",
+["World War I destroyed old empires.","제1차 세계대전은 낡은 제국들을 무너뜨렸다."],
+["The war revealed the danger of nationalism and alliances.","전쟁은 민족주의와 동맹 체제의 위험을 드러냈다."],
+["New states appeared from imperial collapse.","제국 붕괴 속에서 새로운 국가들이 등장했다."],
+["International cooperation became a serious political goal.","국제 협력은 중요한 정치적 목표가 되었다."],
+["The world tried to build order from catastrophe.","세계는 재앙 속에서 질서를 세우려 했다."],
+["Lesson: Peace requires systems, not only good intentions.","교훈: 평화에는 선의뿐 아니라 제도가 필요하다."]],
+
+["대공황과 뉴딜",
+["The Great Depression shattered confidence in capitalism.","대공황은 자본주의에 대한 신뢰를 무너뜨렸다."],
+["Millions lost jobs, savings, and hope.","수많은 사람이 일자리, 저축, 희망을 잃었다."],
+["The crisis forced governments to rethink their role.","위기는 정부의 역할을 다시 생각하게 만들었다."],
+["The New Deal expanded public responsibility for welfare and recovery.","뉴딜은 복지와 회복에 대한 공적 책임을 확대했다."],
+["Economic collapse produced new tools of social protection.","경제 붕괴는 새로운 사회 보호 장치를 만들었다."],
+["Lesson: Markets need resilience, fairness, and public safeguards.","교훈: 시장에는 회복력, 공정성, 공적 안전장치가 필요하다."]],
+
+["제2차 세계대전 이후 유엔 창설",
+["World War II caused destruction on an unimaginable scale.","제2차 세계대전은 상상하기 어려운 규모의 파괴를 낳았다."],
+["The world recognized the failure of old diplomacy.","세계는 낡은 외교 방식의 실패를 깨달았다."],
+["The United Nations was created to prevent another global catastrophe.","유엔은 또 다른 세계적 재앙을 막기 위해 창설되었다."],
+["International law and human rights gained new importance.","국제법과 인권은 새로운 중요성을 얻었다."],
+["Global institutions grew from global trauma.","세계적 제도는 세계적 상처에서 성장했다."],
+["Lesson: Humanity must turn shared suffering into shared responsibility.","교훈: 인류는 공동의 고통을 공동의 책임으로 바꾸어야 한다."]],
+
+["냉전과 우주 경쟁",
+["The Cold War created fear of nuclear destruction.","냉전은 핵 파괴에 대한 공포를 만들었다."],
+["Rivalry pushed nations into scientific competition.","경쟁은 국가들을 과학 경쟁으로 몰아넣었다."],
+["The space race accelerated technology and education.","우주 경쟁은 기술과 교육을 가속화했다."],
+["Satellites, computers, and aerospace science advanced rapidly.","위성, 컴퓨터, 항공우주 과학이 빠르게 발전했다."],
+["Dangerous rivalry produced unexpected innovation.","위험한 경쟁은 예상 밖의 혁신을 낳았다."],
+["Lesson: Competition should be redirected from destruction to discovery.","교훈: 경쟁은 파괴가 아니라 발견으로 향해야 한다."]],
+
+["유럽연합의 형성",
+["Europe had been devastated by repeated wars.","유럽은 반복된 전쟁으로 황폐해졌다."],
+["Former enemies chose cooperation over revenge.","과거의 적들은 복수 대신 협력을 선택했다."],
+["Economic integration reduced the chance of war.","경제 통합은 전쟁 가능성을 낮추었다."],
+["Shared institutions grew from historical trauma.","공동 제도는 역사적 상처에서 성장했다."],
+["Europe became stronger by linking national interests.","유럽은 국가 이익을 연결하며 더 강해졌다."],
+["Lesson: Peace becomes stronger when former enemies share a future.","교훈: 과거의 적들이 미래를 공유할 때 평화는 더 강해진다."]],
+
+["탈식민화 운동",
+["Colonized peoples challenged imperial rule across the world.","식민 지배를 받던 민족들은 전 세계에서 제국 지배에 도전했다."],
+["Empires weakened after war and resistance.","제국들은 전쟁과 저항 이후 약해졌다."],
+["New nations emerged from struggle and sacrifice.","새로운 국가들은 투쟁과 희생 속에서 등장했다."],
+["Independence brought hope but also difficult state-building.","독립은 희망을 가져왔지만 어려운 국가 건설도 요구했다."],
+["The global order became more diverse and complex.","세계 질서는 더 다양하고 복잡해졌다."],
+["Lesson: Freedom requires not only independence but also the ability to govern well.","교훈: 자유에는 독립뿐 아니라 잘 다스릴 능력도 필요하다."]],
+
+["인터넷 혁명",
+["The internet grew from military and academic networks.","인터넷은 군사 및 학술 네트워크에서 성장했다."],
+["It survived decentralization and expanded through openness.","인터넷은 분산 구조를 통해 살아남고 개방성을 통해 확장되었다."],
+["Failures in one part did not destroy the whole system.","한 부분의 실패가 전체 시스템을 무너뜨리지 않았다."],
+["Communication, business, education, and culture changed globally.","소통, 산업, 교육, 문화가 전 세계적으로 바뀌었다."],
+["The network became stronger as more people joined it.","네트워크는 더 많은 사람이 참여할수록 강해졌다."],
+["Lesson: Decentralized systems can become stronger through connection and diversity.","교훈: 분산된 시스템은 연결과 다양성을 통해 더 강해질 수 있다."]],
+
+["코로나19 이후 디지털 전환",
+["The pandemic disrupted daily life across the planet.","팬데믹은 전 세계의 일상을 흔들었다."],
+["Schools, workplaces, hospitals, and governments had to adapt quickly.","학교, 직장, 병원, 정부는 빠르게 적응해야 했다."],
+["Remote work and online learning expanded suddenly.","원격근무와 온라인 학습이 갑자기 확대되었다."],
+["Public health systems learned new methods of response.","공공보건 체계는 새로운 대응 방식을 배웠다."],
+["The crisis accelerated changes that had been slowly developing.","위기는 천천히 진행되던 변화를 빠르게 앞당겼다."],
+["Lesson: Resilience grows when society learns during crisis, not after it.","교훈: 회복력은 위기가 끝난 뒤가 아니라 위기 속에서 배울 때 자란다."]]
+];
+
+document.write(data.map((x,i)=>`
+<div class="card">
+<h2>${i+1}. ${x[0]}</h2>
+${x.slice(1,6).map(s=>`<p class="en">${s[0]}</p><p class="ko">${s[1]}</p>`).join("")}
+<div class="lesson"><p class="en">${x[6][0]}</p><p class="ko">${x[6][1]}</p></div>
+</div>
+`).join(""));
+</script>
+
+</body>
+</html>
