@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>유사 이래의 Black Swan 20장면</title>
+<style>
+body{font-family:Arial,"Malgun Gothic",sans-serif;line-height:1.75;margin:35px;background:#f7f7fb;color:#222}
+h1{color:#111}.card{background:#fff;border-radius:16px;padding:24px;margin:22px 0;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+h2{color:#1f3a8a}.en{font-weight:bold}.ko{color:#333}.lesson{background:#eef6ff;padding:14px;border-left:5px solid #1f3a8a;border-radius:10px}
+</style>
+</head>
+<body>
+
+<h1>유사 이래의 Black Swan 20장면</h1>
+<p>Black Swan은 예상하기 어려웠지만, 일어난 뒤 역사와 문명의 방향을 크게 바꾼 사건을 뜻한다.</p>
+
+<script>
+const data=[
+["1. 고조선의 멸망",
+["The fall of Gojoseon changed the early political order of the Korean Peninsula.","고조선의 멸망은 한반도 초기 정치 질서를 바꾸었다."],
+["An ancient state disappeared under pressure from a stronger empire.","고대 국가는 더 강한 제국의 압박 속에서 사라졌다."],
+["New powers emerged after the old center collapsed.","옛 중심이 무너진 뒤 새로운 세력들이 등장했다."],
+["The event opened a new historical stage in Northeast Asia.","이 사건은 동북아시아에 새로운 역사 단계를 열었다."],
+["It showed that even old states can fall when they fail to adapt.","오래된 국가도 적응하지 못하면 무너질 수 있음을 보여 주었다."],
+["Lesson: Survival requires adaptation to changing power structures.","교훈: 생존에는 변화하는 권력 구조에 대한 적응이 필요하다."]],
+
+["2. 진시황의 중국 통일",
+["Qin Shi Huang unified competing states into one empire.","진시황은 경쟁하던 나라들을 하나의 제국으로 통일했다."],
+["Few expected one ruler to end centuries of division so completely.","한 통치자가 수 세기의 분열을 완전히 끝낼 것이라 예상한 사람은 많지 않았다."],
+["Standardized writing, currency, roads, and laws reshaped China.","문자, 화폐, 도로, 법의 표준화는 중국을 재편했다."],
+["The empire was short-lived, but its system lasted long.","제국은 오래가지 못했지만 그 체계는 오래 지속되었다."],
+["This event created the model of centralized imperial rule.","이 사건은 중앙집권적 제국 통치의 모델을 만들었다."],
+["Lesson: A short regime can leave a long institutional shadow.","교훈: 짧은 정권도 긴 제도적 그림자를 남길 수 있다."]],
+
+["3. 로마 제국의 붕괴",
+["The fall of Rome shocked a world that believed Rome was eternal.","로마의 붕괴는 로마가 영원하다고 믿던 세계에 충격을 주었다."],
+["A powerful empire slowly weakened through internal and external pressures.","강력한 제국은 내부와 외부 압력 속에서 서서히 약해졌다."],
+["Its collapse changed politics, law, religion, and warfare in Europe.","그 붕괴는 유럽의 정치, 법, 종교, 전쟁 방식을 바꾸었다."],
+["New kingdoms rose from the ruins of imperial power.","제국 권력의 폐허 위에서 새로운 왕국들이 등장했다."],
+["The event marked the beginning of a new medieval order.","이 사건은 새로운 중세 질서의 시작을 알렸다."],
+["Lesson: Even great systems collapse when complexity exceeds resilience.","교훈: 위대한 체계도 복잡성이 회복력을 넘어서면 붕괴한다."]],
+
+["4. 이슬람의 급속한 확산",
+["Islam spread across Arabia, North Africa, Persia, and beyond with surprising speed.","이슬람은 아라비아, 북아프리카, 페르시아 등으로 놀라운 속도로 확산되었다."],
+["A religious movement became a major political and cultural civilization.","종교 운동은 거대한 정치·문화 문명이 되었다."],
+["Trade, scholarship, law, and science expanded under Islamic civilization.","이슬람 문명 아래 무역, 학문, 법, 과학이 발전했다."],
+["The event transformed the Mediterranean and Asian worlds.","이 사건은 지중해와 아시아 세계를 변화시켰다."],
+["It connected distant peoples through faith, language, and commerce.","그것은 신앙, 언어, 상업을 통해 먼 지역의 사람들을 연결했다."],
+["Lesson: Ideas can travel faster than armies and change civilizations.","교훈: 사상은 군대보다 빠르게 이동하며 문명을 바꿀 수 있다."]],
+
+["5. 몽골 제국의 등장",
+["The Mongols unexpectedly built the largest land empire in history.","몽골은 예상 밖으로 역사상 가장 큰 육상 제국을 건설했다."],
+["Nomadic warriors defeated many settled civilizations.","유목 전사들은 여러 정착 문명을 무너뜨렸다."],
+["Their conquests caused destruction but also connected Eurasia.","그들의 정복은 파괴를 낳았지만 유라시아를 연결하기도 했다."],
+["Trade, technology, disease, and knowledge moved across vast routes.","무역, 기술, 질병, 지식이 광대한 길을 따라 이동했다."],
+["The world became more interconnected after Mongol expansion.","몽골의 확장 이후 세계는 더 많이 연결되었다."],
+["Lesson: Disruption can destroy borders and create new networks.","교훈: 혼란은 경계를 무너뜨리고 새로운 연결망을 만들 수 있다."]],
+
+["6. 흑사병",
+["The Black Death killed a huge portion of Europe’s population.","흑사병은 유럽 인구의 거대한 부분을 앗아갔다."],
+["No medieval society was prepared for such a disaster.","중세 사회는 그런 재난에 준비되어 있지 않았다."],
+["Labor became more valuable after the population collapse.","인구 붕괴 이후 노동의 가치는 높아졌다."],
+["Feudal structures weakened as survivors demanded better conditions.","생존자들이 더 나은 조건을 요구하면서 봉건 구조가 약해졌다."],
+["The plague changed medicine, religion, economy, and social hierarchy.","흑사병은 의학, 종교, 경제, 사회 계층을 바꾸었다."],
+["Lesson: A catastrophe can expose hidden weaknesses in society.","교훈: 재앙은 사회의 숨은 약점을 드러낸다."]],
+
+["7. 콘스탄티노플 함락",
+["The fall of Constantinople ended the Byzantine Empire.","콘스탄티노플 함락은 비잔티움 제국의 끝을 의미했다."],
+["A city that had stood for centuries finally collapsed.","수 세기 동안 버텨 온 도시가 마침내 무너졌다."],
+["Ottoman power rose as a new force between Europe and Asia.","오스만 세력은 유럽과 아시아 사이의 새로운 강자로 떠올랐다."],
+["Scholars and texts moved westward and influenced the Renaissance.","학자와 문헌은 서쪽으로 이동해 르네상스에 영향을 주었다."],
+["The event changed trade routes, warfare, and geopolitics.","이 사건은 무역로, 전쟁, 지정학을 바꾸었다."],
+["Lesson: The fall of one center can create new centers of power.","교훈: 하나의 중심이 무너지면 새로운 권력 중심이 생길 수 있다."]],
+
+["8. 아메리카 대륙의 발견",
+["The encounter with the Americas connected worlds that had developed separately.","아메리카 대륙과의 만남은 따로 발전하던 세계들을 연결했다."],
+["It reshaped global trade, agriculture, migration, and empire.","그것은 세계 무역, 농업, 이주, 제국을 재편했다."],
+["New crops changed diets across continents.","새로운 작물은 여러 대륙의 식생활을 바꾸었다."],
+["Colonization brought wealth to empires and suffering to indigenous peoples.","식민지화는 제국에 부를 가져왔지만 원주민에게 고통을 주었다."],
+["The event created the first truly global age.","이 사건은 최초의 진정한 세계화 시대를 만들었다."],
+["Lesson: Contact between worlds can create both opportunity and tragedy.","교훈: 세계 간 만남은 기회와 비극을 동시에 만들 수 있다."]],
+
+["9. 종교개혁",
+["The Reformation challenged the authority of the Catholic Church.","종교개혁은 가톨릭 교회의 권위에 도전했다."],
+["Printing allowed new religious ideas to spread quickly.","인쇄술은 새로운 종교 사상이 빠르게 퍼지게 했다."],
+["Europe was divided by faith, politics, and war.","유럽은 신앙, 정치, 전쟁으로 분열되었다."],
+["Ordinary believers gained new access to religious texts.","평범한 신자들은 종교 문헌에 새롭게 접근했다."],
+["The event transformed religion, education, and state power.","이 사건은 종교, 교육, 국가 권력을 변화시켰다."],
+["Lesson: Questioning authority can reshape an entire civilization.","교훈: 권위에 대한 질문은 문명 전체를 재편할 수 있다."]],
+
+["10. 과학혁명",
+["The Scientific Revolution overturned old explanations of nature.","과학혁명은 자연에 대한 낡은 설명을 뒤집었다."],
+["Observation and experiment became stronger than inherited belief.","관찰과 실험은 전해 내려온 믿음보다 강해졌다."],
+["Thinkers such as Copernicus, Galileo, and Newton changed the universe in human imagination.","코페르니쿠스, 갈릴레이, 뉴턴 같은 사상가들은 인간이 상상하는 우주를 바꾸었다."],
+["Science became a method for testing truth.","과학은 진리를 검증하는 방법이 되었다."],
+["Modern technology and industry later grew from this intellectual shift.","근대 기술과 산업은 훗날 이 지적 전환에서 성장했다."],
+["Lesson: Knowledge becomes stronger when it accepts doubt and evidence.","교훈: 지식은 의심과 증거를 받아들일 때 더 강해진다."]],
+
+["11. 프랑스 혁명",
+["The French Revolution destroyed the old monarchy.","프랑스 혁명은 낡은 왕정을 무너뜨렸다."],
+["Economic crisis, inequality, and political anger exploded together.","경제 위기, 불평등, 정치적 분노가 함께 폭발했다."],
+["The revolution spread ideas of rights, citizenship, and equality.","혁명은 권리, 시민권, 평등의 사상을 확산시켰다."],
+["It also produced violence, terror, and instability.","그것은 폭력, 공포, 불안정도 낳았다."],
+["Europe could no longer ignore the political power of ordinary people.","유럽은 더 이상 평범한 사람들의 정치적 힘을 무시할 수 없었다."],
+["Lesson: Delayed reform can return as violent revolution.","교훈: 미뤄진 개혁은 폭력적 혁명으로 돌아올 수 있다."]],
+
+["12. 산업혁명",
+["The Industrial Revolution changed how humans worked and lived.","산업혁명은 인간이 일하고 사는 방식을 바꾸었다."],
+["Machines replaced many forms of manual labor.","기계는 많은 형태의 수작업을 대체했다."],
+["Factories, cities, railways, and mass production expanded rapidly.","공장, 도시, 철도, 대량생산이 빠르게 확대되었다."],
+["The change created wealth but also harsh labor conditions.","그 변화는 부를 만들었지만 혹독한 노동 조건도 낳았다."],
+["Modern capitalism and modern social problems grew together.","근대 자본주의와 근대 사회 문제가 함께 성장했다."],
+["Lesson: Technology must be guided by ethics and social responsibility.","교훈: 기술은 윤리와 사회적 책임에 의해 이끌려야 한다."]],
+
+["13. 제1차 세계대전",
+["World War I began from a local assassination but became a global war.","제1차 세계대전은 지역적 암살 사건에서 시작되었지만 세계 전쟁이 되었다."],
+["Alliances turned one crisis into a chain reaction.","동맹 체제는 하나의 위기를 연쇄 반응으로 만들었다."],
+["Empires collapsed after years of industrial warfare.","제국들은 수년간의 산업화된 전쟁 이후 무너졌다."],
+["Millions died in trenches, cities, and battlefields.","수많은 사람이 참호, 도시, 전장에서 죽었다."],
+["The war prepared the conditions for even greater conflict.","이 전쟁은 더 큰 갈등의 조건을 만들었다."],
+["Lesson: Small events can become disasters when systems are fragile.","교훈: 체계가 취약하면 작은 사건도 재앙이 될 수 있다."]],
+
+["14. 러시아 혁명",
+["The Russian Revolution overthrew the Romanov monarchy.","러시아 혁명은 로마노프 왕조를 무너뜨렸다."],
+["War, poverty, and political repression fueled rebellion.","전쟁, 빈곤, 정치적 억압이 반란을 키웠다."],
+["A communist state emerged from imperial collapse.","제국 붕괴 속에서 공산주의 국가가 등장했다."],
+["The revolution changed global politics for the twentieth century.","이 혁명은 20세기 세계 정치를 바꾸었다."],
+["Its effects shaped ideology, war, and international relations.","그 영향은 이념, 전쟁, 국제 관계를 형성했다."],
+["Lesson: Extreme inequality and repression can produce radical change.","교훈: 극심한 불평등과 억압은 급진적 변화를 낳을 수 있다."]],
+
+["15. 대공황",
+["The Great Depression shattered confidence in the global economy.","대공황은 세계 경제에 대한 신뢰를 무너뜨렸다."],
+["Markets collapsed, banks failed, and unemployment spread.","시장이 붕괴하고 은행이 무너지며 실업이 확산되었다."],
+["Governments were forced to rethink economic policy.","정부들은 경제 정책을 다시 생각해야 했다."],
+["The crisis changed the relationship between citizens and the state.","위기는 시민과 국가의 관계를 바꾸었다."],
+["It also contributed to political extremism in many places.","그것은 여러 지역에서 정치적 극단주의에도 영향을 주었다."],
+["Lesson: Economic systems need safeguards before crisis arrives.","교훈: 경제 체계에는 위기가 오기 전 안전장치가 필요하다."]],
+
+["16. 제2차 세계대전",
+["World War II became the deadliest conflict in human history.","제2차 세계대전은 인류 역사상 가장 많은 희생을 낳은 전쟁이 되었다."],
+["Fascism, imperial ambition, and failed diplomacy drove the world into catastrophe.","파시즘, 제국적 야망, 실패한 외교가 세계를 재앙으로 몰아넣었다."],
+["The Holocaust revealed the extreme danger of organized hatred.","홀로코스트는 조직화된 증오의 극단적 위험을 드러냈다."],
+["The war ended with nuclear weapons and a new world order.","전쟁은 핵무기와 새로운 세계 질서와 함께 끝났다."],
+["The United Nations and human rights systems emerged from the ruins.","유엔과 인권 체계는 폐허 속에서 등장했다."],
+["Lesson: Hatred becomes most dangerous when it gains state power.","교훈: 증오는 국가 권력을 얻을 때 가장 위험해진다."]],
+
+["17. 원자폭탄 투하",
+["The atomic bomb suddenly gave humanity the power to destroy itself.","원자폭탄은 인류에게 스스로를 파괴할 힘을 갑자기 주었다."],
+["Science became directly tied to mass destruction.","과학은 대량 파괴와 직접 연결되었다."],
+["War, ethics, diplomacy, and security changed forever.","전쟁, 윤리, 외교, 안보가 영원히 바뀌었다."],
+["The nuclear age created fear and strategic balance at the same time.","핵 시대는 공포와 전략적 균형을 동시에 만들었다."],
+["Human progress became morally more complicated.","인류의 진보는 도덕적으로 더 복잡해졌다."],
+["Lesson: Power without wisdom can threaten the future of humanity.","교훈: 지혜 없는 힘은 인류의 미래를 위협할 수 있다."]],
+
+["18. 소련 붕괴",
+["The Soviet Union collapsed without a direct world war.","소련은 직접적인 세계대전 없이 붕괴했다."],
+["A superpower that seemed permanent disappeared quickly.","영원할 것 같던 초강대국이 빠르게 사라졌다."],
+["The Cold War order ended and new states emerged.","냉전 질서가 끝나고 새로운 국가들이 등장했다."],
+["Capitalism, socialism, and geopolitics were redefined.","자본주의, 사회주의, 지정학이 다시 정의되었다."],
+["The world entered an uncertain post-Cold War age.","세계는 불확실한 탈냉전 시대로 들어섰다."],
+["Lesson: A system can look strong while its inner foundations are weakening.","교훈: 어떤 체계는 겉으로 강해 보여도 내부 기반은 약해질 수 있다."]],
+
+["19. 9·11 테러",
+["The September 11 attacks shocked the world through an unexpected method of violence.","9·11 테러는 예상치 못한 폭력 방식으로 세계를 충격에 빠뜨렸다."],
+["A small group changed global security policy.","소수 집단이 세계 안보 정책을 바꾸었다."],
+["Air travel, surveillance, military strategy, and diplomacy were transformed.","항공 여행, 감시 체계, 군사 전략, 외교가 변화했다."],
+["The event led to long wars and new fears.","이 사건은 긴 전쟁과 새로운 공포를 낳았다."],
+["It showed that modern systems can be vulnerable to asymmetric threats.","그것은 현대 체계가 비대칭 위협에 취약할 수 있음을 보여 주었다."],
+["Lesson: Security must consider unlikely but high-impact risks.","교훈: 안보는 가능성이 낮지만 영향이 큰 위험까지 고려해야 한다."]],
+
+["20. COVID-19 팬데믹",
+["COVID-19 suddenly disrupted daily life across the planet.","코로나19는 전 세계의 일상을 갑자기 흔들었다."],
+["Schools, borders, hospitals, markets, and workplaces were transformed.","학교, 국경, 병원, 시장, 직장이 변화했다."],
+["Global supply chains revealed unexpected fragility.","세계 공급망은 예상 밖의 취약성을 드러냈다."],
+["Digital work, remote learning, and public health systems expanded rapidly.","디지털 업무, 원격 학습, 공공보건 체계가 빠르게 확대되었다."],
+["The pandemic reminded humanity that invisible risks can reshape history.","팬데믹은 보이지 않는 위험이 역사를 바꿀 수 있음을 인류에게 일깨웠다."],
+["Lesson: A resilient world must prepare for risks before they become visible.","교훈: 회복력 있는 세계는 위험이 눈에 보이기 전에 준비해야 한다."]]
+];
+
+document.write(data.map(x=>`
+<div class="card">
+<h2>${x[0]}</h2>
+${x.slice(1,6).map(s=>`<p class="en">${s[0]}</p><p class="ko">${s[1]}</p>`).join("")}
+<div class="lesson"><p class="en">${x[6][0]}</p><p class="ko">${x[6][1]}</p></div>
+</div>`).join(""));
+</script>
+
+</body>
+</html>
