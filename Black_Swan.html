@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>The Black Swan 최종 프리미엄 HTML</title><style>
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>The Black Swan</title><style>
 body{margin:0;font-family:'Malgun Gothic',Arial,sans-serif;background:#f4f7f8;color:#172033;line-height:1.75}
 header{background:linear-gradient(135deg,#0f172a,#164e63);color:white;padding:40px 20px;text-align:center}
 nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #d9e2e7;padding:10px;text-align:center;z-index:10}
@@ -24,7 +24,7 @@ function copyText(id){navigator.clipboard.writeText(document.getElementById(id).
 function speakText(id){const t=document.getElementById(id).innerText; const u=new SpeechSynthesisUtterance(t); u.lang=/[가-힣]/.test(t)?'ko-KR':'en-US'; speechSynthesis.speak(u);}
 function stopSpeak(){speechSynthesis.cancel();}
 </script></head><body>
-<header><h1>The Black Swan</h1><h3>The Impact of the Highly Improbable</h3><p>최종 프리미엄 HTML: 핵심 개념 100개 + 학습 문장 100개 + 책 내용 100문장</p><p class="small">※ 원문 인용이 아니라 책의 핵심 메시지를 바탕으로 새롭게 작성한 수업용 영어·한글 문장입니다.</p></header>
+<header><h1>The Black Swan</h1></header>
 <nav><a href="#author">저자</a><a href="#value">가치</a><a href="#summary">요약</a><a href="#chapter">장별</a><a href="#ratio">비율</a><a href="#concepts">핵심개념100</a><a href="#sentences">학습문장100</a><a href="#book100">책내용100</a><a href="#copyright">안내</a></nav>
 <div class="wrap">
 <section><h2>검색 · 인쇄</h2><input id="q" onkeyup="searchText()" placeholder="예: Black Swan, uncertainty, risk, prediction, 불확실성, 예측"><div class="controls"><button onclick="window.print()">인쇄하기</button><button onclick="stopSpeak()" class="topbtn">TTS 정지</button></div></section>
